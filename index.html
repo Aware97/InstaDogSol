@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -161,13 +162,11 @@
                     <i data-lucide="instagram" class="w-6 h-6 text-pink-400"></i>
                 </div>
 
-                <!-- The actual dog photo - REPLACE THIS IMAGE -->
-                <div class="relative rounded-2xl overflow-hidden bg-gradient-to-br from-blue-900/30 to-purple-900/30">
+                <!-- The actual dog photo - CLICK TO VIEW ORIGINAL POST -->
+                <a href="https://www.instagram.com/p/C8hZc/" target="_blank" rel="noopener noreferrer" class="block relative rounded-2xl overflow-hidden bg-gradient-to-br from-blue-900/30 to-purple-900/30 hover:opacity-90 transition-opacity cursor-pointer">
                     <img 
-                        src="
-
--jpg”
-                        alt="First Instagram Dog - July 16, 2010"
+                        src="https://i.imgur.com/REPLACE_WITH_YOUR_IMAGE_ID.jpg" 
+                        alt="First Instagram Dog - July 16, 2010 - Click to view original post"
                         class="w-full h-auto"
                         style="aspect-ratio: 1/1; object-fit: cover;"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
@@ -177,10 +176,17 @@
                         <div class="text-center p-8">
                             <i data-lucide="camera" class="w-20 h-20 text-purple-400 mx-auto mb-4 opacity-50"></i>
                             <p class="text-2xl font-bold text-purple-300">🐕 The First Instagram Dog</p>
-                            <p class="text-sm text-gray-500 mt-2">https://raw.githubusercontent.com/Aware97/InstaDogSol/refs/heads/main/kevin-dog.JPG</p>
+                            <p class="text-sm text-gray-500 mt-2"> Instagram · kevin431K+ likes  ·  15 years agoPhoto by Kevin Systrom (@kevin) · June 11, 2015 </p>
+                            <p class="text-xs text-purple-400 mt-4"> https://raw.githubusercontent.com/Aware97/InstaDogSol/refs/heads/main/kevin-dog.JPG </p>
                         </div>
                     </div>
-                </div>
+                    <!-- "View Original" overlay on hover -->
+                    <div class="absolute inset-0 bg-black/0 hover:bg-black/50 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/30">
+                            <span class="text-white font-bold">🔗 View Original Post</span>
+                        </div>
+                    </div>
+                </a>
 
                 <!-- Instagram-style engagement -->
                 <div class="bg-black/50 backdrop-blur-sm rounded-2xl p-4 mt-3">
