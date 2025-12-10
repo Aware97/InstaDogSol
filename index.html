@@ -222,7 +222,7 @@
                 </span>
             </button>
             
-            <button onclick="copyContract(HZV3gDZ1we5YZh3rSKfhhWBZA7Pcd555mM5HXpw6pump)" id="copyBtn" class="px-10 py-5 bg-white/5 backdrop-blur-sm rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300 border-2 border-purple-500/30 hover:border-purple-500 transform hover:scale-105">
+            <button onclick="copyContract()" id="copyBtn" class="px-10 py-5 bg-white/5 backdrop-blur-sm rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300 border-2 border-purple-500/30 hover:border-purple-500 transform hover:scale-105">
                 📋 COPY CONTRACT
             </button>
         </div>
@@ -371,7 +371,7 @@
 
     // Copy contract function
     function copyContract() {
-        const contractAddress = "Coming Soon"; // Replace with actual contract
+        const contractAddress = "HZV3gDZ1we5YZh3rSKfhhWBZA7Pcd555mM5HXpw6pump"; // Replace with actual contract
         navigator.clipboard.writeText(contractAddress).then(() => {
             const btn = document.getElementById('copyBtn');
             btn.textContent = '✓ COPIED!';
